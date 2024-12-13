@@ -1,0 +1,24 @@
+.scroller{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scroller div {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width:900px) {
+    .scroller div img {
+        margin-right: 30px;
+    }
+}

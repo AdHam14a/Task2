@@ -1,0 +1,41 @@
+.mainLayout{
+    margin-top: 650px;
+    background-color: rgb(237, 255, 249);
+    position: relative;
+    padding: 50px 0;
+}
+
+.layout{
+    display: flex;
+    justify-content: center;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.imageStyle{
+    height: 360px;
+}
+
+.quotes{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width:900px) {
+    .cardStyle{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardStyle div{
+        margin-left: 20px;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+}

@@ -1,0 +1,27 @@
+.searchBar{
+    margin-top: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.locIcon{
+    font-size: 21px;
+}
+
+.formStyle{
+    width: 1000px;
+    box-shadow: -2px 2px 9px 1px;
+    border-radius: 10px;
+}
+
+
+.layout{
+    display: flex;
+    justify-content: center;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}

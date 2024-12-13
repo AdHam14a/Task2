@@ -1,0 +1,20 @@
+.cardImg{
+    width: 170px;
+}
+
+.cardStyles{
+    font-size:14px
+}
+
+@media (max-width:900px){
+    .carCard{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardStyles{
+        font-size: 10px;
+    }
+    .cardImg{
+        width: 120px;
+    }
+}

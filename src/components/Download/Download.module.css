@@ -1,0 +1,24 @@
+.mainLayout{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.formLayout{
+    background-color: rgb(158, 177, 198);
+    width: 32%;
+}
+
+
+.imgCont{
+    position: relative;
+}
+
+.img{
+    position: absolute;
+    top: -320px;
+    right:120px;
+}
+
+.img img{
+    width: 400px;
+}
