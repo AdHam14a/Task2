@@ -1,9 +1,13 @@
 .cardImg{
-    width: 170px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardStyles{
-    font-size:14px
+    font-size:0.9vw;
 }
 
 @media (max-width:900px){
@@ -12,9 +16,9 @@
         flex-direction: column;
     }
     .cardStyles{
-        font-size: 10px;
+        font-size: 1.6vw;
     }
     .cardImg{
-        width: 120px;
+        width: 70%;
     }
 }

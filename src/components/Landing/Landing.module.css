@@ -2,18 +2,24 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 .divtext{
-    position: absolute;
-    top: 225px;
-    left: 160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    align-items: start;
+    justify-content: start;
+    margin: 150px 100px;
 }
 
 .porshecar{
-    position: absolute;
-    right: 40px;
-    top: 80px
+    position: relative;
+    flex: 1 1 300px; 
+    display: flex;
+    justify-content: flex-end;
 }
 
 .frame{
@@ -24,38 +30,43 @@
 }
 
 .car{
-    right: 0;
+    max-width: 100%;
     z-index: 1000;
-    animation: beginning 3s;
+    animation: beginning 2s;
 }
 
 @keyframes beginning {
     from{
-        width: 0%;
+        width: 50%;
+        height: 50%;
     }
 
     to{
         width: 100%;
+        height: 100%;
     }
 }
 
-
-@media (max-width:900px) {
-    .cont{
-        position: relative;
-        display: flex;
-    }
-    .porshecar{
-        position: absolute;
-        right: 20px;
-        top: 40px;
+@media (max-width: 1325px) {
+    .divtext {
+        margin-bottom: 10px;
+        align-items: center;
     }
     .car{
-        width: 370px;
+        animation: none;
     }
-    .divtext{
-        position: absolute;
-        top: 280px;
-        left: 70px;
+    .porshecar{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    .cont {
+        flex-direction: column;
+    }
+
+    .porshecar{
+        justify-content: center;
+        margin: 0;
     }
 }
