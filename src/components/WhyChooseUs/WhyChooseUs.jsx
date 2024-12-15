@@ -9,7 +9,7 @@ export default function WhyChooseUs() {
   return (
       <>
         <div className={`container ${styles.cont}`}>
-            <div className="row">
+            <div className={`row ${styles.rowStyle}`}>
                 <div className={`col-6 ${styles.imgCont}`}>
                     <img src={Audi} alt="audi" className={ styles.audi } />
                     <img src={vectorImg} alt="vector" className={ styles.vector }/>

@@ -1,74 +1,83 @@
-.cont{
+.cont {
     position: relative;
     margin-top: 130px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.imgCont{
-    position: absolute;
+.imgCont {
+    position: relative;
+    flex: 1 1 50%;
 }
 
-.audi{
+.audi {
     z-index: 1000;
-    position: absolute;
+    position: relative; 
+    max-width: 100%; 
+    margin-top: 50px;
+}
+
+.vector {
+    position: absolute; 
+    max-width: 100%; 
+    left: 0;
     top: 0;
-    left: -100px;
+    z-index: -1;
 }
 
-.vector{
-    position: absolute;
-    top: -90px;
-    left: -100px;
+.paragraphs {
+    flex: 1 1 50%;
+    padding: 20px; 
 }
 
-.paragraphs{
-    position: absolute;
-    top: -45px;
-    right: -50px;
-}
-
-.text{
+.text {
     font-size: 22px;
     font-weight: 500;
     margin-top: 15px;
     margin-bottom: 45px;
 }
 
-.textImgCont{
+
+.textImgCont {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.textCont{
+.textCont {
     display: flex;
     flex-direction: column;
 }
 
-@media (max-width:900px) {
-    
-    .audi{
-        width: 300px;
-        top: -30px;
-        left: 10px;
-    }
-    .vector{
-        top: -150px;
-        left: -100px;
+@media (max-width: 900px) {
+    .cont{
+        flex-direction: column;
     }
 
-    .paragraphs{
-        top: 160px;
-        right: 80px;
+    .audi{
+        margin-top: 80px;
     }
-    .textImgCont{
-        display: flex;
+    .vector {
+        top: -150px;
+        left: 0; 
+    }
+
+    .paragraphs {
+        padding: 5px;
+    }
+    .textImgCont {
         margin-bottom: 5px;
-        width: 100px;
+        width: 100%; 
     }
-    .textCont{
+    .textCont {
         display: flex;
         flex-direction: row;
     }
+    .rowStyle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }

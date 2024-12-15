@@ -22,3 +22,33 @@
 .img img{
     width: 400px;
 }
+
+@media (max-width:1260px) {
+    .mainLayout{
+        margin-left: 30px;
+    }
+
+    .img{
+        top: -230px;
+        right:120px;
+    }
+
+    .img img{
+        width: 300px;
+    }
+}
+
+@media (max-width:890px) {
+    .imgCont{
+        display: none;
+    }
+    .mainLayout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .formLayout{
+        width: 100%;
+    }
+}

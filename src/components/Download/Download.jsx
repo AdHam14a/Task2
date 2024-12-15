@@ -14,7 +14,7 @@ export default function Download() {
                 <img src={ios} alt="ios"/>
             </div>
             <form>
-                <div className={`form-row `}>
+                <div className={`form-row`}>
                     <div className="col">
                         <input type="text" className={`form-control rounded-4 mt-3 ${styles.formLayout}`} placeholder="Name"/>
                     </div>

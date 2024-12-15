@@ -1,4 +1,15 @@
-.cont{
+.cont {
     background-color: #051C34;
     margin-top: 42px;
+    padding: 20px; 
+}
+
+@media (max-width: 768px) {
+    .cont {
+        padding: 10px; 
+    }
+
+    .row > div {
+        margin-bottom: 20px;
+    }
 }
